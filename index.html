@@ -118,10 +118,10 @@
       <div class="metric"><p class="lbl">Account spend</p><p class="val">£343.3k</p><p class="note">52.8M impr · £6.50 CPM · <span style="color:var(--ink2)">≈0% WoW</span> · Meta, complete</p></div>
       <div class="metric"><p class="lbl">Avg CP first valid mtg</p><p class="val">£116.68</p><p class="note"><span style="color:#27500A">↓ 19% WoW</span> · goal metric · vs £144 W27*</p></div>
       <div class="metric"><p class="lbl">First valid meetings</p><p class="val">2,941</p><p class="note"><span style="color:#27500A">↑ 24% WoW</span> · vs 2,379 W27* · 9,235 accounts</p></div>
-      <div class="metric"><p class="lbl">Efficiency gap · CPC → CP FVM</p><p class="val">85×</p><p class="note"><span style="color:#27500A">↓ from 97× W27</span> · £1.37 click → £117 meeting</p></div>
+      <div class="metric"><p class="lbl">Efficiency gap · clicks / meeting</p><p class="val" style="color:#854F0B">85 <span style="font-size:12px;font-weight:700;background:var(--am-bg);color:var(--am-tx);padding:3px 9px;border-radius:8px;vertical-align:middle">● Amber</span></p><p class="note">benchmark ≈60 (June best) · <span style="color:#27500A">↓ from 97 W27 peak</span> · still elevated at scale</p></div>
     </div>
 
-    <p style="font-size:11px;color:var(--ink3);margin-top:10px"><strong style="color:#27500A">Efficiency gap</strong> = how many ad clicks it takes to book one meeting (CP FVM ÷ CPC, which is the same as clicks ÷ meetings). 85 clicks per meeting this week, down from 97 — but this is a pullback off a peak, not a return to form: the account ran at ~60 in early June. See <a href="#gaptrend" style="color:#854F0B">the trend below</a>. FVM figures are complete this week. <span style="color:#854F0B">* W27 comparison uses Catalyst's complete W27 report.</span></p>
+    <p style="font-size:11px;color:var(--ink3);margin-top:10px"><strong>Efficiency gap</strong> = how many ad clicks it takes to book one meeting (CP FVM ÷ CPC = clicks ÷ meetings); lower is better. Benchmark ≈ 60 clicks/meeting (early-June best). RAG bands: <span style="color:#27500A">green ≤ 65</span> · <span style="color:#854F0B">amber 65–90</span> · <span style="color:#993C1D">red &gt; 90</span>. At 85 it’s amber — better than last week’s 97 peak, but still above the June baseline as spend scaled to £343k. FVM figures complete this week. <span style="color:#854F0B">* W27 comparison uses Catalyst’s complete W27 report.</span></p>
 
     <div class="panel">
       <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:10px">
@@ -167,88 +167,6 @@
         <span class="ic">▲</span>
         <p><strong>The new creator videos are converting cheaply at small budgets.</strong> Top spenders show higher CPAs, but that's driven by their scale, not weak creative (Catalyst's point). Opportunity: give the efficient new creators more room and watch whether the CPA holds as spend grows.</p>
       </div>
-    </div>
-  </section>
-
-  <section id="gaptrend">
-    <h2>Efficiency gap over time — is 85 good?</h2>
-    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Short answer: better than last week, not yet good. Here's what the metric means and how it's moved.</p>
-
-    <div class="panel" style="margin-top:0">
-      <h3 style="font-size:14px;font-weight:700;margin-bottom:6px">What the efficiency gap actually is</h3>
-      <p style="font-size:13px;color:var(--ink2);line-height:1.6">It's simply <strong>how many ad clicks it takes to book one first valid meeting</strong>. The maths: cost per meeting ÷ cost per click cancels down to clicks ÷ meetings. This week £117 ÷ £1.37 = <strong>85 clicks per booked meeting</strong>. <strong>Lower is better</strong> — it means fewer clicks are "wasted" on the way to a meeting, i.e. a tighter funnel from attention to conversion.</p>
-      <p style="font-size:13px;color:var(--ink2);line-height:1.6;margin-top:8px">One caveat to read it with: very cheap, curious clicks inflate the number without meaning weak creative. Founders traffic clicks at just £0.93, so it naturally needs more clicks per meeting (99) even though its actual cost per meeting is the <em>lowest</em> of the three archetypes. So always read the gap next to the absolute cost per meeting, never on its own.</p>
-    </div>
-
-    <div class="panel">
-      <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:4px">
-        <h3 style="font-size:14px;font-weight:700">Clicks per booked meeting, W24 → W28</h3>
-        <p style="font-size:11px;color:var(--ink3)">lower = more efficient · dashed line = early-June baseline (~60)</p>
-      </div>
-      <svg viewBox="0 0 730 250" style="width:100%;height:auto;display:block;margin-top:6px" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Inter,Helvetica,Arial,sans-serif">
-        <!-- y gridlines + labels -->
-        <line x1="55" y1="20" x2="685" y2="20" stroke="#eae7e1" stroke-width="1"/>
-        <line x1="55" y1="110" x2="685" y2="110" stroke="#eae7e1" stroke-width="1"/>
-        <line x1="55" y1="200" x2="685" y2="200" stroke="#eae7e1" stroke-width="1"/>
-        <text x="47" y="24" text-anchor="end" font-size="11" fill="#a8a29e">100</text>
-        <text x="47" y="114" text-anchor="end" font-size="11" fill="#a8a29e">75</text>
-        <text x="47" y="204" text-anchor="end" font-size="11" fill="#a8a29e">50</text>
-        <!-- June baseline (value 60) -->
-        <line x1="55" y1="164" x2="685" y2="164" stroke="#639922" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.7"/>
-        <text x="685" y="159" text-anchor="end" font-size="10.5" fill="#27500A">June baseline ≈ 60</text>
-        <!-- trend line -->
-        <polyline points="55,168 212.5,135 370,117 527.5,31 685,74" fill="none" stroke="#57534e" stroke-width="2.5"/>
-        <!-- points -->
-        <circle cx="55" cy="168" r="5" fill="#57534e"/>
-        <circle cx="212.5" cy="135" r="5" fill="#57534e"/>
-        <circle cx="370" cy="117" r="5" fill="#57534e"/>
-        <circle cx="527.5" cy="31" r="6" fill="#993C1D"/>
-        <circle cx="685" cy="74" r="6" fill="#27500A"/>
-        <!-- value labels -->
-        <text x="55" y="185" text-anchor="middle" font-size="13" font-weight="700" fill="#57534e">59</text>
-        <text x="212.5" y="152" text-anchor="middle" font-size="13" font-weight="700" fill="#57534e">68</text>
-        <text x="370" y="134" text-anchor="middle" font-size="13" font-weight="700" fill="#57534e">73</text>
-        <text x="527.5" y="24" text-anchor="middle" font-size="13" font-weight="700" fill="#993C1D">97</text>
-        <text x="660" y="68" text-anchor="middle" font-size="13" font-weight="700" fill="#27500A">85</text>
-        <!-- x labels -->
-        <text x="55" y="228" text-anchor="middle" font-size="11" fill="#57534e">W24</text>
-        <text x="212.5" y="228" text-anchor="middle" font-size="11" fill="#57534e">W25</text>
-        <text x="370" y="228" text-anchor="middle" font-size="11" fill="#57534e">W26</text>
-        <text x="527.5" y="228" text-anchor="middle" font-size="11" fill="#57534e">W27</text>
-        <text x="685" y="228" text-anchor="middle" font-size="11" fill="#57534e">W28</text>
-        <text x="55" y="242" text-anchor="middle" font-size="9.5" fill="#a8a29e">8 Jun</text>
-        <text x="212.5" y="242" text-anchor="middle" font-size="9.5" fill="#a8a29e">15 Jun</text>
-        <text x="370" y="242" text-anchor="middle" font-size="9.5" fill="#a8a29e">22 Jun</text>
-        <text x="527.5" y="242" text-anchor="middle" font-size="9.5" fill="#a8a29e">29 Jun</text>
-        <text x="685" y="242" text-anchor="middle" font-size="9.5" fill="#a8a29e">6 Jul</text>
-      </svg>
-
-      <div style="overflow-x:auto;margin-top:10px">
-        <table style="width:100%;border-collapse:collapse;font-size:12px;min-width:520px">
-          <thead>
-            <tr style="text-align:right;color:var(--ink3)">
-              <th style="text-align:left;padding:6px 8px;font-weight:600">Week</th>
-              <th style="padding:6px 8px;font-weight:600">Spend</th>
-              <th style="padding:6px 8px;font-weight:600">CPC</th>
-              <th style="padding:6px 8px;font-weight:600">CP FVM</th>
-              <th style="padding:6px 8px;font-weight:600">Clicks / meeting</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="text-align:right;border-top:1px solid var(--line)"><td style="text-align:left;padding:6px 8px">W24 · 8–14 Jun</td><td style="padding:6px 8px">£243k</td><td style="padding:6px 8px">£1.32</td><td style="padding:6px 8px">£78</td><td style="padding:6px 8px;font-weight:700;color:#27500A">59</td></tr>
-            <tr style="text-align:right;border-top:1px solid var(--line)"><td style="text-align:left;padding:6px 8px">W25 · 15–21 Jun</td><td style="padding:6px 8px">£277k</td><td style="padding:6px 8px">£1.46</td><td style="padding:6px 8px">£100</td><td style="padding:6px 8px;font-weight:700">68</td></tr>
-            <tr style="text-align:right;border-top:1px solid var(--line)"><td style="text-align:left;padding:6px 8px">W26 · 22–28 Jun</td><td style="padding:6px 8px">£331k</td><td style="padding:6px 8px">£1.71</td><td style="padding:6px 8px">£124</td><td style="padding:6px 8px;font-weight:700">73</td></tr>
-            <tr style="text-align:right;border-top:1px solid var(--line)"><td style="text-align:left;padding:6px 8px">W27 · 29 Jun–5 Jul</td><td style="padding:6px 8px">£343k</td><td style="padding:6px 8px">£1.48</td><td style="padding:6px 8px">£144</td><td style="padding:6px 8px;font-weight:700;color:#993C1D">97</td></tr>
-            <tr style="text-align:right;border-top:1px solid var(--line)"><td style="text-align:left;padding:6px 8px"><strong>W28 · 6–12 Jul</strong></td><td style="padding:6px 8px">£343k</td><td style="padding:6px 8px">£1.37</td><td style="padding:6px 8px">£117</td><td style="padding:6px 8px;font-weight:700;color:#27500A">85</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p style="font-size:11px;color:var(--ink3);margin-top:8px">CPC + spend from Meta (complete); CP FVM from Catalyst's weekly reports (the goal metric). Weeks before W24 aren't cleanly comparable — the US CLS test campaigns ran until W24 and there was a spend outage in W23 — so the trend starts here.</p>
-    </div>
-
-    <div class="flag">
-      <span class="ic">▲</span>
-      <p><strong>So is 85 good? It's the right direction, but we're still running less efficiently than a month ago.</strong> The gap climbed steadily through June (59 → 97) as spend scaled 40% (£243k → £343k) and frequency crept up — that climb is partly the normal scale effect Catalyst flagged, not proof of weaker creative. W28's drop to 85 is a genuine win because it came from <em>cheaper meetings</em> (CP FVM −19%), not just cheaper clicks. The bar to watch: can we get back toward ~60 clicks/meeting while holding £343k spend? That's what the fresh creator creative needs to prove as it scales.</p>
     </div>
   </section>
 
