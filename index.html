@@ -104,7 +104,7 @@
     <p class="sectlabel">This week in 3</p>
     <div style="background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px">
       <ol style="margin:0;padding-left:20px;font-size:15px;line-height:1.7;color:var(--ink)">
-        <li style="margin-bottom:10px"><strong>The quality gap is one campaign, not the creative.</strong> WorkEmail took 20% of spend and bought 29% of the account's accounts — but produced 6% of its meetings, at £241 each. The same creatives deliver £34–£89 a meeting everywhere else.</li>
+        <li style="margin-bottom:10px"><strong>The quality gap is one campaign, and work-email share explains it.</strong> WorkEmail took 20% of spend and 29% of the account's accounts but produced 6% of its meetings, at £241 each — and returns just <strong>28% work-email accounts against a 44% account average</strong>, the lowest of any campaign. The same creatives deliver £34–£89 a meeting elsewhere.</li>
         <li style="margin-bottom:10px"><strong>34 testing videos cleared the gate and 24 of them aren't running anywhere.</strong> £21.52 an account and £39.67 a meeting, all beating both benchmarks. The two videos still live in testing are the only two that fail them.</li>
         <li><strong>Decision-makers went dark on the 18 Aug launch.</strong> 20 ads went live and spent about £15 between them. Across August the archetype ran 80 ads at £47.52 a meeting — level with the other two — so this is a delivery problem, not a performance one.</li>
       </ol>
@@ -203,40 +203,82 @@
 
 
   <section>
-    <h2>Where the quality goes — by campaign objective</h2>
-    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Conversion campaigns, W35. Account&rarr;meeting is the share of created accounts that go on to run a first valid meeting; the account ran at 37.7% this week.</p>
-    <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:14px">
-      <div class="ac" style="border-top-color:#292524">
-        <h3>Desktop scaling</h3>
-        <p class="share">£207.1k · 47% of spend</p>
-        <div class="big"><span class="n">42.0%</span><span class="u">acc &rarr; mtg</span></div>
-        <div class="arow"><span class="l">Accounts</span><span class="v">6,748</span></div>
-        <div class="arow"><span class="l">Meetings</span><span class="v">2,833</span></div>
-        <div class="arow"><span class="l">CP FVM</span><span class="v">£73</span></div>
+    <h2>Where the quality goes — by campaign and market</h2>
+    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Conversion campaigns, W35, split by market rather than lumped. <strong>Accounts here are <code>account_created</code> — work plus personal email — not <code>account_created_on_desktop</code></strong>, so every campaign is measured on the same event regardless of what it optimises toward. Account totals for the week: 16,845 accounts, of which 7,405 work and 9,415 personal (44% work).</p>
+
+    <div class="panel" style="margin-top:0">
+      <div style="display:grid;grid-template-columns:1.7fr .8fr .5fr .7fr .7fr .8fr .7fr;gap:0;font-size:13px">
+        <div style="padding:8px 0;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Campaign · market</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Spend</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">%</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Accounts</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Work %</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Acc&rarr;mtg</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">CP FVM</div>
+
+        <div style="padding:9px 0;border-top:1px solid var(--line); font-weight:700;">WorkEmail scaling · 🇺🇸 US<span style="color:var(--ink3);font-weight:400"> · 35 ads</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right; font-weight:700;">£88.5k</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:var(--ink3)">20.2%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right">4,748</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D;font-weight:600">28%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D;font-weight:600">7.7%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D;font-weight:700">£241</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);">Desktop scaling · 🇺🇸 US<span style="color:var(--ink3);font-weight:400"> · 78 ads</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;">£86.6k</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:var(--ink3)">19.8%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right">3,190</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">51%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:600">43.9%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:700">£62</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);">FMVC scaling · 🇺🇸 US<span style="color:var(--ink3);font-weight:400"> · 106 ads</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;">£85.0k</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:var(--ink3)">19.4%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right">2,512</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">51%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">65.0%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:700">£52</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);">Desktop scaling · 🇬🇧 UK<span style="color:var(--ink3);font-weight:400"> · 129 ads</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;">£70.7k</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:var(--ink3)">16.1%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right">1,837</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:600">47%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:600">43.7%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:700">£88</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);">Testing · 🇺🇸 US<span style="color:var(--ink3);font-weight:400"> · 76 ads</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;">£57.1k</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:var(--ink3)">13.0%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right">2,193</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">56%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">51.6%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:700">£50</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);">Desktop scaling · 🇨🇦 CAN<span style="color:var(--ink3);font-weight:400"> · 91 ads</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;">£29.1k</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:var(--ink3)">6.6%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right">966</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:600">42%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:600">38.0%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:700">£79</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);">Desktop scaling · 🇦🇺 AUS<span style="color:var(--ink3);font-weight:400"> · 68 ads</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;">£20.8k</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:var(--ink3)">4.7%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right">755</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:600">46%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D;font-weight:600">34.8%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:700">£79</div>
       </div>
-      <div class="ac" style="border-top-color:#993C1D">
-        <h3>WorkEmail</h3>
-        <p class="share">£88.5k · 20% of spend</p>
-        <div class="big"><span class="n" style="color:#993C1D">7.7%</span><span class="u">acc &rarr; mtg</span></div>
-        <div class="arow"><span class="l">Accounts</span><span class="v">4,748</span></div>
-        <div class="arow"><span class="l">Meetings</span><span class="v" style="color:#993C1D">367</span></div>
-        <div class="arow"><span class="l">CP FVM</span><span class="v" style="color:#993C1D">£241</span></div>
+      <p style="font-size:12px;color:var(--ink2);margin-top:12px"><strong>Splitting Desktop scaling by market changes the read.</strong> Desktop US converts 43.9% of accounts to meetings at £62; UK does 43.7% but at £88, and Canada and Australia sit at 38% and 35%. The scaling campaign is not one thing — the US arm is the second-cheapest line in the account and the UK arm is the third-dearest.</p>
+    </div>
+
+    <div class="panel">
+      <h3 style="font-size:14px;font-weight:700;margin-bottom:4px">The WorkEmail campaign has the lowest work-email share in the account</h3>
+      <p style="font-size:12px;color:var(--ink2);margin-bottom:10px">This is the dip Freddie described, and the numbers bear it out. WorkEmail returns <strong>28% work-email accounts against an account average of 44%</strong> — the lowest of any campaign — while Testing runs at 56% and both US scaling campaigns at 51%. It buys the cheapest accounts in the account at £18.64 and the dearest meetings at £241, because the accounts it is buying are overwhelmingly personal-email signups.</p>
+      <div style="display:flex;height:26px;border-radius:8px;overflow:hidden;font-size:11px;font-weight:600;margin-bottom:4px">
+        <div style="width:28%;background:#292524;color:#fff;display:flex;align-items:center;justify-content:center">Work 28%</div>
+        <div style="width:72%;background:#e0d5c2;color:#57534e;display:flex;align-items:center;justify-content:center">Personal 72% — WorkEmail campaign</div>
       </div>
-      <div class="ac" style="border-top-color:#639922">
-        <h3>FMVC</h3>
-        <p class="share">£85.0k · 19% of spend</p>
-        <div class="big"><span class="n" style="color:#27500A">65.0%</span><span class="u">acc &rarr; mtg</span></div>
-        <div class="arow"><span class="l">Accounts</span><span class="v">2,512</span></div>
-        <div class="arow"><span class="l">Meetings</span><span class="v" style="color:#27500A">1,634</span></div>
-        <div class="arow"><span class="l">CP FVM</span><span class="v" style="color:#27500A">£52</span></div>
-      </div>
-      <div class="ac" style="border-top-color:#c9a875">
-        <h3>Testing (US)</h3>
-        <p class="share">£57.1k · 13% of spend</p>
-        <div class="big"><span class="n">51.6%</span><span class="u">acc &rarr; mtg</span></div>
-        <div class="arow"><span class="l">Accounts</span><span class="v">2,193</span></div>
-        <div class="arow"><span class="l">Meetings</span><span class="v">1,131</span></div>
-        <div class="arow"><span class="l">CP FVM</span><span class="v" style="color:#27500A">£50</span></div>
+      <div style="display:flex;height:26px;border-radius:8px;overflow:hidden;font-size:11px;font-weight:600">
+        <div style="width:56%;background:#639922;color:#fff;display:flex;align-items:center;justify-content:center">Work 56%</div>
+        <div style="width:44%;background:#dbe7c8;color:#3d4d1a;display:flex;align-items:center;justify-content:center">Personal 44% — US Testing</div>
       </div>
     </div>
 
@@ -245,7 +287,7 @@
       <p style="font-size:12px;color:var(--ink3);margin-bottom:10px">The same creative, split by the campaign it runs in. If this were a creative problem the rows would agree.</p>
       <div style="display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:0;font-size:13px;border-top:1px solid var(--line)">
         <div style="padding:8px 0;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Creative</div>
-        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">WorkEmail</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">WorkEmail US</div>
         <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Desktop scaling US</div>
         <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">FMVC US</div>
         <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">C122_g1_v3 Rachel Paul video</div>
@@ -257,7 +299,7 @@
         <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">29.8% · £80</div>
         <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">85.0% · £34</div>
       </div>
-      <p style="font-size:12px;color:var(--ink2);margin-top:10px">Account&rarr;meeting and cost per meeting. Rachel Paul is the dearest creative in the account at £405 a meeting inside WorkEmail and the cheapest at £39 inside FMVC — a 10× swing on identical creative. WorkEmail optimises to work-email account creation, so Meta finds the people who will do that cheaply, and they do not go on to run meetings.</p>
+      <p style="font-size:12px;color:var(--ink2);margin-top:10px">Account&rarr;meeting and cost per meeting. Rachel Paul is the dearest creative in the account at £405 a meeting inside WorkEmail and the cheapest at £39 inside FMVC — a 10× swing on identical creative.</p>
     </div>
 
     <div class="flag"><div class="ic">▲</div><p><strong>Month to date this is a £275k question.</strong> Across 1–30 Aug WorkEmail took £274.7k and returned meetings at £158 against FMVC's £71 and Desktop scaling's £74 — and it got worse this week, not better. Worth agreeing with Freddie whether the optimisation event moves, or the budget does.</p></div>
@@ -265,39 +307,39 @@
 
   <section>
     <h2>Top 10 by spend</h2>
-    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Badge = CP FVM ÷ CP account (lower is better) · chip = spend WoW · 🟢 live / 🔴 off, counted across all placements. All ten are live, though C122_g1_v1 is down to 4 of 9 placements. Conversion campaigns only; awareness (£13.4k) excluded. * = launched in-week, cost per meeting still maturing.</p>
+    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Badge = CP FVM ÷ CP account (lower is better) · chip = spend WoW · <strong>Work email = share of the creative's accounts created with a work address</strong>, not a personal one (account average 44%) · 🟢 live / 🔴 off, counted across all placements. All ten are live, though C122_g1_v1 is down to 4 of 9 placements. Conversion campaigns only; awareness (£13.4k) excluded. * = launched in-week, cost per meeting still maturing.</p>
     <div class="grid5">
 
       <div class="cc"><div class="img"><div class="ph">Video</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a75da329359231afe9058bf/large-thumbnail/f30c6012-62a7-4320-bbec-4934b1b428fa.jpg" onerror="this.style.display='none'"><div class="rank">1</div><div class="fmt">Video</div><div class="badge b-co">11.3&times;</div></div>
         <div class="body"><div><p class="nm">C122_g1_v3 Rachel Paul creator video · male</p><p class="wk">launched 06 Aug · Daily Doers · 🟢 live (9/9)</p></div><div class="tags"><span class="tag t-up">&uarr; 22% WoW</span><span class="tag t-arch">Cross-platform</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£53.7k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#993C1D">9%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£183</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£53.7k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#993C1D">26%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£183</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a7c9f84c34d8f2d5205b7a5/large-thumbnail/d083e3a6-fb54-4fd3-975a-a5de7aecf079.jpg" onerror="this.style.display='none'"><div class="rank">2</div><div class="fmt">Static</div><div class="badge b-co">4.7&times;</div></div>
         <div class="body"><div><p class="nm">C91_g3_v6 Siha static</p><p class="wk">launched 03 Aug · Busy Mind-ers · 🟢 live (7/7)</p></div><div class="tags"><span class="tag t-up">&uarr; 52% WoW</span><span class="tag t-arch">Notepad</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£40.3k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#993C1D">21%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£108</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£40.3k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#854F0B">41%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£108</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">WL</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a7f50bdc34d8f2d5263f858/large-thumbnail/3d99ea8d-0188-4126-846b-57a91f3d7937.jpg" onerror="this.style.display='none'"><div class="rank">3</div><div class="fmt">WL</div><div class="badge b-gr">2.0&times;</div></div>
         <div class="body"><div><p class="nm">C121_v1 Josh Baraket partnership carousel</p><p class="wk">launched 09 Aug · Busy Mind-ers · 🟢 live (9/9)</p></div><div class="tags"><span class="tag t-flat">&uarr; 12% WoW</span><span class="tag t-arch">Be present</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£23.2k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#27500A">51%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£70</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£23.2k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#27500A">51%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£70</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a886139c34d8f2d525ef538/large-thumbnail/84beebff-8f4d-42f9-a813-bce27923b087.jpg" onerror="this.style.display='none'"><div class="rank">4</div><div class="fmt">Static</div><div class="badge b-am">3.2&times;</div></div>
         <div class="body"><div><p class="nm">C179_g9_v1 Siha static</p><p class="wk">launched 17 Aug · Busy Mind-ers · 🟢 live (9/9)</p></div><div class="tags"><span class="tag t-up">&uarr; 190% WoW</span><span class="tag t-arch">Be present</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£16.8k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#854F0B">32%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#854F0B">£88</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£16.8k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#854F0B">44%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#854F0B">£88</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">WL</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a75da329359231afe9057d9/large-thumbnail/d641a703-2aa5-4154-b931-665bcbbfcbe0.jpg" onerror="this.style.display='none'"><div class="rank">5</div><div class="fmt">WL</div><div class="badge b-am">3.4&times;</div></div>
         <div class="body"><div><p class="nm">C119_g1_v1 Josh Baraket partnership video</p><p class="wk">launched 08 Aug · Busy Mind-ers · 🟢 live (9/9)</p></div><div class="tags"><span class="tag t-down">&darr; 20% WoW</span><span class="tag t-arch">Be present</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£13.4k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#993C1D">30%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#854F0B">£86</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£13.4k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#993C1D">36%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#854F0B">£86</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a638f5f6d140d33b8ca8810/large-thumbnail/37fca947-0b2f-45fc-8a9a-66a7e5d9a06e.png" onerror="this.style.display='none'"><div class="rank">6</div><div class="fmt">Static</div><div class="badge b-am">2.5&times;</div></div>
         <div class="body"><div><p class="nm">concept06_3 9x16 static</p><p class="wk">launched Feb 2026 · 🟢 live (9/9)</p></div><div class="tags"><span class="tag t-down">&darr; 18% WoW</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£12.1k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#854F0B">39%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£53</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£12.1k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#854F0B">46%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£53</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a8c47ce1c821539dba2ae43/large-thumbnail/6a1d5e61-6a6c-41d2-8bb0-5ef4cc51bcf3.jpg" onerror="this.style.display='none'"><div class="rank">7</div><div class="fmt">Static</div><div class="badge b-am">3.1&times;</div></div>
         <div class="body"><div><p class="nm">C167_g1_v1 Siha static</p><p class="wk">launched 17 Aug · Busy Mind-ers · 🟢 live (9/10)</p></div><div class="tags"><span class="tag t-up">&uarr; 784% WoW</span><span class="tag t-arch">Cross-platform</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£11.7k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#854F0B">32%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£115</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£11.7k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#854F0B">42%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£115</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">WL</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a7bf641c34d8f2d521be384/large-thumbnail/9f642ff3-bfe6-4243-9404-5e63efaa3b83.png" onerror="this.style.display='none'"><div class="rank">8</div><div class="fmt">WL</div><div class="badge b-gr">1.5&times;</div></div>
         <div class="body"><div><p class="nm">C131_g1_v1 Yassi Xiong partnership static</p><p class="wk">launched 04 Aug · Busy Mind-ers · 🟢 live (7/9)</p></div><div class="tags"><span class="tag t-up">&uarr; 51% WoW</span><span class="tag t-arch">Be present</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£10.9k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#27500A">66%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£65</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£10.9k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#27500A">60%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£65</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">WL</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a870fb9c34d8f2d5240b07f/large-thumbnail/3be8a469-befc-4a12-befd-5b72e4c1095b.jpg" onerror="this.style.display='none'"><div class="rank">9</div><div class="fmt">WL</div><div class="badge b-gr">1.4&times;</div></div>
         <div class="body"><div><p class="nm">C143 Kelly Sun partnership video</p><p class="wk">launched 19 Aug · Daily Doers · 🟢 live (9/9)</p></div><div class="tags"><span class="tag t-down">&darr; 22% WoW</span><span class="tag t-arch">Notepad</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£10.2k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#27500A">74%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#854F0B">£74</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£10.2k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#27500A">54%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#854F0B">£74</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">Video</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a7c4ad9c34d8f2d527d2f61/large-thumbnail/4dbbc4c9-a5c8-4c90-a2a3-db8bf41cef3b.jpg" onerror="this.style.display='none'"><div class="rank">10</div><div class="fmt">Video</div><div class="badge b-co">4.6&times;</div></div>
         <div class="body"><div><p class="nm">C122_g1_v1 Rachel Paul creator video · female</p><p class="wk">launched 10 Aug · Daily Doers · 🟢 live (4/9)</p></div><div class="tags"><span class="tag t-down">&darr; 69% WoW</span><span class="tag t-arch">Cross-platform</span></div>
-        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£8.5k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#993C1D">22%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£105</p></div></div></div></div>
+        <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£8.5k</p></div><div class="s"><p class="sl">Work email</p><p class="sv" style="color:#993C1D">29%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£105</p></div></div></div></div>
     </div>
     <div class="flag"><div class="ic">▲</div><p><strong>Read the top two against the section above, not on their own.</strong> C122_g1_v3 (£53.7k) and C91_g3_v6 (£40.3k) show the account's worst cost per meeting, but three quarters of their spend sits inside WorkEmail. In FMVC the same two cuts deliver meetings at £39 and £34. The creative is not the problem; the campaign it is being spent in is.</p></div>
   </section>
@@ -444,7 +486,7 @@
 
   <section>
     <h2>YouTube — 18% of US paid spend, its best week yet</h2>
-    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Google Ads Demand Gen, US only, same week, same goal metric. One campaign — <strong>US Youtube Prospecting</strong>, out of the mid-restructure it was in last week and flagged <em>limited by budget</em> against an £11k daily cap. Campaign totals below; ad-level detail follows for the one ad group Naomi exported.</p>
+    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Google Ads Demand Gen, US only, same week, same goal metric. One campaign — <strong>US Youtube Prospecting</strong>, out of the mid-restructure it was in last week and flagged <em>limited by budget</em> against an £11k daily cap. Campaign totals below, then ad-level across all four ad groups.</p>
 
     <div class="cards4">
       <div class="metric"><p class="lbl">YouTube spend</p><p class="val">£71.7k</p><p class="note">4.18M impr · <span style="color:#27500A">&darr; 4% WoW</span> · 18% of US paid spend</p></div>
@@ -466,48 +508,49 @@
       <p style="font-size:12px;color:var(--ink2);margin-top:10px">A third fewer clicks producing 44% more meetings is the signature of the restructure working — the channel stopped buying cheap unqualified traffic. CTR falling from 0.33% to 0.25% would normally read as a problem; here it is the point, and it is a clean example of why hook metrics are never the conversion signal. Still 10.9× Meta US per meeting, so this is a channel improving, not a channel competitive.</p>
     </div>
 
-    <p class="winlabel" style="margin-top:22px">Ad level — one ad group, £41.2k of the £71.7k campaign</p>
-    <p style="font-size:12px;color:var(--ink3);margin:0 0 12px">The Ad report export covers a single ad group: 20 ads, <strong>57% of campaign cost and 49% of its conversions</strong>. Directionally sound, not the whole channel. Grouped on the full <code>C##_g#_v#</code> token, as on Meta.</p>
+    <p class="winlabel" style="margin-top:22px">Ad level — full campaign, 41 ads across four ad groups</p>
+    <p style="font-size:12px;color:var(--ink3);margin:0 0 12px">£64.7k of the £71.7k campaign (90%); the £7.0k difference is removed ads. Grouped on the full <code>C##_g#_v#</code> token, as on Meta.</p>
 
-    <div style="display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:0;font-size:13px;border-top:1px solid var(--line)">
-      <div style="padding:8px 0;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Creative family</div>
+    <div style="display:grid;grid-template-columns:1.5fr repeat(4,1fr);gap:0;font-size:13px;border-top:1px solid var(--line)">
+      <div style="padding:8px 0;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Ad group</div>
       <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Cost</div>
       <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">CTR</div>
       <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Conv</div>
       <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Cost / conv</div>
 
-      <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">Concept 5 (podcast) · 4 ads</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;font-weight:600">£30.2k · 73%</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D">0.18%</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;font-weight:600">40.6</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;font-weight:600;color:#27500A">£744</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">All (legacy) · 20 ads</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;font-weight:600">£41.2k · 64%</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D">0.19%</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">46.4</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B;font-weight:600">£887</div>
 
-      <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">Token-named · Meta creative reused · 8 ads</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">£7.3k · 18%</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">0.20%</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">4.3</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D">£1,695</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">Daily Doers · 9 ads</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">£6.9k · 11%</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A">0.38%</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">12.2</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:700">£572</div>
 
-      <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">Concept 2 (podcast) · 4 ads</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">£1.7k · 4%</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A">0.26%</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">1.0</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D">£1,665</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">Decision-makers · 8 ads</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">£8.3k · 13%</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A">0.36%</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">10.2</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">£815</div>
 
-      <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">Concept 4 (podcast) · 4 ads</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">£2.0k · 5%</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A">0.27%</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">0.5</div>
-      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D">£4,033</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">Busy Mind-ers · 4 ads</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">£8.3k · 13%</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">0.29%</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">9.1</div>
+      <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#854F0B">£910</div>
     </div>
 
-    <p style="font-size:12px;color:var(--ink2);margin-top:10px"><strong>One ad is the channel.</strong> Concept 5 – H3B2 took £23.3k and returned 33.0 conversions at £705 — 71% of the ad group's conversions from 57% of its spend. Concept 5 as a family carries 87% of the conversions. Everything else is noise around it.</p>
+    <p style="font-size:12px;color:var(--ink2);margin-top:10px"><strong>The archetype restructure is paying for itself.</strong> The three archetype ad groups take 36% of channel spend and return £748 a conversion against the legacy "All" group's £887, on nearly double the CTR (0.33% vs 0.19%). Daily Doers is the best group on the channel at £572. Same archetype order as Meta testing, which is a useful cross-channel signal.</p>
 
-    <div class="flag"><div class="ic">▲</div><p><strong>On YouTube, CTR is pointing the wrong way — sharply.</strong> The five highest-CTR ads in the group (0.35%–0.73%, led by C108_v3 Rachel Paul at 0.73%) produced <strong>zero conversions between them</strong>. The single best converter, H3B2, has the <em>lowest</em> CTR in the top five at 0.17%. Reused Meta creative gets the clicks and none of the meetings: 8 token-named ads, £7.3k, 4.3 conversions at £1,695 apiece — 2.3× the Concept 5 cost. C164_g1_v2 was last week's bright spot at £673 a conversion; this week it is £1,611.</p></div>
+    <p class="winlabel" style="margin-top:20px">One ad still is the channel</p>
+    <p style="font-size:12px;color:var(--ink2)"><strong>Concept 5 – H3B2 took £23.3k — 36% of all channel spend — and returned 33.0 conversions at £705</strong>, which is 42% of every conversion YouTube produced. The Concept 5 family as a whole is £30.2k and 41 conversions at £744. Concept 4 is the opposite end: £2.0k for half a conversion. Behind the headline, the best small performers are all archetype-targeted partnership video — <strong>C15_g1_v3</strong> (Decision-makers, £463 on 4.0 conv), <strong>C79_g19_v1</strong> (Daily Doers, £663 on 3.3) and <strong>C34_g1_v1</strong> (Daily Doers, £796).</p>
 
-    <p style="font-size:11px;color:var(--ink3);margin-top:10px">Two gaps remain. <strong>The export still carries no Video ID</strong> on any of the 20 rows, so there are no thumbnails or watch links — same as last week. And it is one ad group, so the other £30.5k of campaign spend is unattributed. Worth asking Daniel Dayot for the ad-level export segmented by ad group across the whole campaign. 11 of the 20 ads produced no conversions at all, though only £4.4k (11%) sits behind them.</p>
+    <div class="flag"><div class="ic">▲</div><p><strong>CTR does not survive contact with conversion here.</strong> C108_v3 (Rachel Paul) has the highest click-through on the channel at 0.73% and produced nothing; H3B2 has the lowest of the big spenders at 0.17% and produced 42% of the conversions. 14 of 41 ads converted zero, though only £5.2k (8%) sits behind them. Read this channel on cost per conversion only.</p></div>
 
-    <p style="font-size:11px;color:var(--ink3);margin-top:10px">"Meetings" = the export's <strong>Conversions</strong> column (93.85 at £763.92 cost per conversion). The <em>Conv. (Platform comparable)</em> column shows 133 at £539 — a modelled cross-platform metric on a different attribution basis, not the conversion count, and not used here. The campaign is budget-limited at £11k/day (£77k/week), so spend is capped rather than optimised down.</p>
+    <p style="font-size:11px;color:var(--ink3);margin-top:10px"><strong>The export still carries no Video ID</strong> on any of the 41 rows, so there are no thumbnails or watch links — third file running. If Daniel Dayot can add that column, next week's YouTube section can be image-led like the Meta ones. "Conversions" is the export's Conversions column (93.85 campaign-wide at £763.92); <em>Conv. (Platform comparable)</em> shows 133 at £539 on a different attribution basis and is not used. View-through conversions (129 across these ads) are reported separately and excluded.</p>
   </section>
 
   <footer>
