@@ -93,7 +93,7 @@
     <div class="meta">
       Goal metric: cost per first valid meeting<br>
       Meta + YouTube · spend threshold £150<br>
-      Motion · Google Ads · pulled 1 Sep 2026
+      Motion · Google Ads · Notion · pulled 1 Sep 2026
     </div>
   </div>
 </header>
@@ -104,9 +104,9 @@
     <p class="sectlabel">This week in 3</p>
     <div style="background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px">
       <ol style="margin:0;padding-left:20px;font-size:15px;line-height:1.7;color:var(--ink)">
-        <li style="margin-bottom:10px"><strong>The two biggest spenders buy accounts cheapest and meetings dearest.</strong> C122_g1_v3 and C91_g3_v6 took £94k — 20% of the account — at £16 and £23 an account, but only 9% and 21% of those accounts run a meeting against 38% account-wide.</li>
-        <li style="margin-bottom:10px"><strong>Live testing is 22 Siha statics and 2 videos.</strong> 61 of 85 testing ads are paused; the whole Newform video cohort bar two is off, and Decision-makers is down to one live ad on a fifth of the budget.</li>
-        <li><strong>The gate benchmarks are three weeks old and a refresh is overdue.</strong> Scored on the locked W32 numbers, 12 of 14 decided ads graduate — as designed. Recomputed on trailing-14-day scaling CPA they land ~40% tighter and 9 of those 12 flip to kill.</li>
+        <li style="margin-bottom:10px"><strong>The quality gap is one campaign, not the creative.</strong> WorkEmail took 20% of spend and bought 29% of the account's accounts — but produced 6% of its meetings, at £241 each. The same creatives deliver £34–£89 a meeting everywhere else.</li>
+        <li style="margin-bottom:10px"><strong>34 testing videos cleared the gate and 24 of them aren't running anywhere.</strong> £21.52 an account and £39.67 a meeting, all beating both benchmarks. The two videos still live in testing are the only two that fail them.</li>
+        <li><strong>Decision-makers went dark on the 18 Aug launch.</strong> 20 ads went live and spent about £15 between them. Across August the archetype ran 80 ads at £47.52 a meeting — level with the other two — so this is a delivery problem, not a performance one.</li>
       </ol>
       <p style="font-size:11px;color:var(--ink3);margin-top:10px">Weekly pulse, 24–30 Aug (Mon–Sun). Mainly Meta; YouTube runs as a separate section at the end. Account figures and per-creative figures both come from Motion this week; Motion's top 60 covers 83% of account spend. Goal = cost per first valid meeting (custom conversion <code>1207928644549116</code>).</p>
     </div>
@@ -156,7 +156,7 @@
 
     <p style="font-size:11px;color:var(--ink3);margin-top:10px"><strong>Click &rarr; meeting</strong> = meetings ÷ clicks · <span style="color:#27500A">green ≥1.5%</span> · <span style="color:#854F0B">amber 1.1–1.5%</span> · <span style="color:#993C1D">red &lt;1.1%</span>. Clicks +51%, accounts +51%, meetings +40%: the account bought a lot more top-of-funnel and converted a slightly thinner slice of it. Account &rarr; meeting fell 41% &rarr; 38%.</p>
 
-    <div class="flag"><div class="ic">▲</div><p><strong>Volume is up and cost per meeting is down — but quality is drifting.</strong> Cost per account fell 10% to £27.69 while cost per meeting only fell 3%. The gap between the two metrics is the thing to watch: it is widening, and it is concentrated in the two largest creatives.</p></div>
+    <div class="flag"><div class="ic">▲</div><p><strong>Volume is up and cost per meeting is down, but the funnel leaked in one place.</strong> Clicks +51%, accounts +51%, meetings +40% — click&rarr;account held exactly flat at 3.1%, so the whole loss sits at account&rarr;meeting, 40.9% &rarr; 37.7%. The section below shows where.</p></div>
 
     <div class="panel">
       <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:6px;margin-bottom:10px">
@@ -201,6 +201,68 @@
       </div>
   </section>
 
+
+  <section>
+    <h2>Where the quality goes — by campaign objective</h2>
+    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Conversion campaigns, W35. Account&rarr;meeting is the share of created accounts that go on to run a first valid meeting; the account ran at 37.7% this week.</p>
+    <div style="display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:14px">
+      <div class="ac" style="border-top-color:#292524">
+        <h3>Desktop scaling</h3>
+        <p class="share">£207.1k · 47% of spend</p>
+        <div class="big"><span class="n">42.0%</span><span class="u">acc &rarr; mtg</span></div>
+        <div class="arow"><span class="l">Accounts</span><span class="v">6,748</span></div>
+        <div class="arow"><span class="l">Meetings</span><span class="v">2,833</span></div>
+        <div class="arow"><span class="l">CP FVM</span><span class="v">£73</span></div>
+      </div>
+      <div class="ac" style="border-top-color:#993C1D">
+        <h3>WorkEmail</h3>
+        <p class="share">£88.5k · 20% of spend</p>
+        <div class="big"><span class="n" style="color:#993C1D">7.7%</span><span class="u">acc &rarr; mtg</span></div>
+        <div class="arow"><span class="l">Accounts</span><span class="v">4,748</span></div>
+        <div class="arow"><span class="l">Meetings</span><span class="v" style="color:#993C1D">367</span></div>
+        <div class="arow"><span class="l">CP FVM</span><span class="v" style="color:#993C1D">£241</span></div>
+      </div>
+      <div class="ac" style="border-top-color:#639922">
+        <h3>FMVC</h3>
+        <p class="share">£85.0k · 19% of spend</p>
+        <div class="big"><span class="n" style="color:#27500A">65.0%</span><span class="u">acc &rarr; mtg</span></div>
+        <div class="arow"><span class="l">Accounts</span><span class="v">2,512</span></div>
+        <div class="arow"><span class="l">Meetings</span><span class="v" style="color:#27500A">1,634</span></div>
+        <div class="arow"><span class="l">CP FVM</span><span class="v" style="color:#27500A">£52</span></div>
+      </div>
+      <div class="ac" style="border-top-color:#c9a875">
+        <h3>Testing (US)</h3>
+        <p class="share">£57.1k · 13% of spend</p>
+        <div class="big"><span class="n">51.6%</span><span class="u">acc &rarr; mtg</span></div>
+        <div class="arow"><span class="l">Accounts</span><span class="v">2,193</span></div>
+        <div class="arow"><span class="l">Meetings</span><span class="v">1,131</span></div>
+        <div class="arow"><span class="l">CP FVM</span><span class="v" style="color:#27500A">£50</span></div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h3 style="font-size:14px;font-weight:700;margin-bottom:4px">It is the campaign, not the ad</h3>
+      <p style="font-size:12px;color:var(--ink3);margin-bottom:10px">The same creative, split by the campaign it runs in. If this were a creative problem the rows would agree.</p>
+      <div style="display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:0;font-size:13px;border-top:1px solid var(--line)">
+        <div style="padding:8px 0;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Creative</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">WorkEmail</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Desktop scaling US</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">FMVC US</div>
+        <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">C122_g1_v3 Rachel Paul video</div>
+        <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D;font-weight:600">3.8% · £405</div>
+        <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">24.0% · £89</div>
+        <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">61.8% · £39</div>
+        <div style="padding:8px 0;border-top:1px solid var(--line);font-weight:600">C91_g3_v6 Siha static</div>
+        <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#993C1D;font-weight:600">7.7% · £268</div>
+        <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right">29.8% · £80</div>
+        <div style="padding:8px 0;border-top:1px solid var(--line);text-align:right;color:#27500A;font-weight:600">85.0% · £34</div>
+      </div>
+      <p style="font-size:12px;color:var(--ink2);margin-top:10px">Account&rarr;meeting and cost per meeting. Rachel Paul is the dearest creative in the account at £405 a meeting inside WorkEmail and the cheapest at £39 inside FMVC — a 10× swing on identical creative. WorkEmail optimises to work-email account creation, so Meta finds the people who will do that cheaply, and they do not go on to run meetings.</p>
+    </div>
+
+    <div class="flag"><div class="ic">▲</div><p><strong>Month to date this is a £275k question.</strong> Across 1–30 Aug WorkEmail took £274.7k and returned meetings at £158 against FMVC's £71 and Desktop scaling's £74 — and it got worse this week, not better. Worth agreeing with Freddie whether the optimisation event moves, or the budget does.</p></div>
+  </section>
+
   <section>
     <h2>Top 10 by spend</h2>
     <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Badge = CP FVM ÷ CP account (lower is better) · chip = spend WoW · 🟢 live / 🔴 off, counted across all placements. All ten are live, though C122_g1_v1 is down to 4 of 9 placements. Conversion campaigns only; awareness (£13.4k) excluded. * = launched in-week, cost per meeting still maturing.</p>
@@ -237,123 +299,101 @@
         <div class="body"><div><p class="nm">C122_g1_v1 Rachel Paul creator video · female</p><p class="wk">launched 10 Aug · Daily Doers · 🟢 live (4/9)</p></div><div class="tags"><span class="tag t-down">&darr; 69% WoW</span><span class="tag t-arch">Cross-platform</span></div>
         <div class="stats"><div class="s"><p class="sl">Spend</p><p class="sv">£8.5k</p></div><div class="s"><p class="sl">Acc &rarr; mtg</p><p class="sv" style="color:#993C1D">22%</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#993C1D">£105</p></div></div></div></div>
     </div>
-    <div class="flag"><div class="ic">▲</div><p><strong>Sense-check for Catalyst:</strong> C122_g1_v3 is the largest line in the account at £53.7k and rose another 22% this week, but its cost per meeting has gone £114 &rarr; £183 and only 9% of the accounts it creates go on to run a meeting. It is a genuinely cheap account-creator and a genuinely expensive meeting-creator; worth agreeing whether the budget rise was deliberate before it compounds again.</p></div>
+    <div class="flag"><div class="ic">▲</div><p><strong>Read the top two against the section above, not on their own.</strong> C122_g1_v3 (£53.7k) and C91_g3_v6 (£40.3k) show the account's worst cost per meeting, but three quarters of their spend sits inside WorkEmail. In FMVC the same two cuts deliver meetings at £39 and £34. The creative is not the problem; the campaign it is being spent in is.</p></div>
   </section>
 
   <section>
-    <h2>The three archetypes have converged — and Decision-makers is nearly dark</h2>
-    <p style="font-size:12px;color:var(--ink3);margin:4px 0 18px">US testing funnel: clicks &rarr; accounts &rarr; meetings. Ad-level inside the <code>Archetype Testing</code> ad sets, 24–30 Aug. £57.5k total, 85 ads, 24 live.</p>
+    <h2>Archetypes are level on cost — Decision-makers went dark on the 18 Aug launch</h2>
+    <p style="font-size:12px;color:var(--ink3);margin:4px 0 18px">Efficiency is this week (24–30 Aug). <strong>Ad volume is month to date (1–30 Aug)</strong> — a single week understates it, because most of a cohort is already paused by the time the next one launches.</p>
     <div class="arch3">
 
       <div class="ac" style="border-top-color:#639922">
         <div style="display:flex;justify-content:space-between;align-items:baseline"><h3>Busy Mind-ers</h3><span class="pilltier" style="background:var(--gr-bg);color:var(--gr-tx)">cheapest / mtg</span></div>
-        <p class="share">£22.9k spend · <strong>40% of testing budget</strong> · 11 of 38 ads live</p>
-        <div style="text-align:center;margin:8px 0 14px"><span style="font-size:32px;font-weight:700;color:#27500A">4.1%</span><br><span style="font-size:11px;color:var(--ink3)">click &rarr; meeting</span></div>
-        <div style="width:100%;background:#e7edf6;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">11,594</div><div style="font-size:10px;color:var(--ink3)">clicks · £1.98 each</div></div>
-        <div style="text-align:center;font-size:10px;color:var(--ink3);padding:3px 0">&darr; 7.8%</div>
-        <div style="width:70%;margin:0 auto;background:#dbe7c8;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">902</div><div style="font-size:10px;color:var(--ink3)">accounts · £25 each</div></div>
-        <div style="text-align:center;font-size:10px;color:var(--ink3);padding:3px 0">&darr; 52%</div>
-        <div style="width:44%;margin:0 auto;background:#b6cf86;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">471</div><div style="font-size:10px;color:#3d4d1a">meetings · £49 each</div></div>
+        <p class="share">W35 £22.9k · <strong>129 ads run in Aug, 11 live</strong></p>
+        <div style="text-align:center;margin:8px 0 14px"><span style="font-size:32px;font-weight:700;color:#27500A">4.1%</span><br><span style="font-size:11px;color:var(--ink3)">click &rarr; meeting, W35</span></div>
+        <div class="arow" style="border-top:none"><span class="l">W35 accounts</span><span class="v">902 · £25</span></div>
+        <div class="arow"><span class="l">W35 meetings</span><span class="v">471 · £49</span></div>
+        <div class="arow"><span class="l">Aug MTD spend</span><span class="v">£79.6k</span></div>
+        <div class="arow"><span class="l">Aug MTD CP FVM</span><span class="v">£46.67</span></div>
+        <p class="take">Biggest pool and the cheapest meeting of the three, on both the weekly and the monthly view.</p>
       </div>
 
       <div class="ac" style="border-top-color:#c9a875">
-        <div style="display:flex;justify-content:space-between;align-items:baseline"><h3>Daily Doers</h3><span class="pilltier" style="background:var(--am-bg);color:var(--am-tx)">biggest pool</span></div>
-        <p class="share">£23.1k spend · <strong>40% of testing budget</strong> · 12 of 39 ads live</p>
-        <div style="text-align:center;margin:8px 0 14px"><span style="font-size:32px;font-weight:700;color:#854F0B">4.0%</span><br><span style="font-size:11px;color:var(--ink3)">click &rarr; meeting</span></div>
-        <div style="width:100%;background:#e7edf6;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">11,525</div><div style="font-size:10px;color:var(--ink3)">clicks · £2.01 each</div></div>
-        <div style="text-align:center;font-size:10px;color:var(--ink3);padding:3px 0">&darr; 7.7%</div>
-        <div style="width:70%;margin:0 auto;background:#dbe7c8;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">885</div><div style="font-size:10px;color:var(--ink3)">accounts · £26 each</div></div>
-        <div style="text-align:center;font-size:10px;color:var(--ink3);padding:3px 0">&darr; 52%</div>
-        <div style="width:44%;margin:0 auto;background:#b6cf86;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">460</div><div style="font-size:10px;color:#3d4d1a">meetings · £50 each</div></div>
+        <div style="display:flex;justify-content:space-between;align-items:baseline"><h3>Daily Doers</h3><span class="pilltier" style="background:var(--am-bg);color:var(--am-tx)">level</span></div>
+        <p class="share">W35 £23.1k · <strong>127 ads run in Aug, 12 live</strong></p>
+        <div style="text-align:center;margin:8px 0 14px"><span style="font-size:32px;font-weight:700;color:#854F0B">4.0%</span><br><span style="font-size:11px;color:var(--ink3)">click &rarr; meeting, W35</span></div>
+        <div class="arow" style="border-top:none"><span class="l">W35 accounts</span><span class="v">885 · £26</span></div>
+        <div class="arow"><span class="l">W35 meetings</span><span class="v">460 · £50</span></div>
+        <div class="arow"><span class="l">Aug MTD spend</span><span class="v">£73.1k</span></div>
+        <div class="arow"><span class="l">Aug MTD CP FVM</span><span class="v">£45.86</span></div>
+        <p class="take">Cheapest accounts of the three across the month at £23.50, and the widest live pool.</p>
       </div>
 
       <div class="ac" style="border-top-color:#993C1D">
         <div style="display:flex;justify-content:space-between;align-items:baseline"><h3>Decision-makers</h3><span class="pilltier" style="background:var(--co-bg);color:var(--co-tx)">1 ad live</span></div>
-        <p class="share">£11.4k spend · <strong>20% of testing budget</strong> · 1 of 8 ads live</p>
-        <div style="text-align:center;margin:8px 0 14px"><span style="font-size:32px;font-weight:700;color:#27500A">4.4%</span><br><span style="font-size:11px;color:var(--ink3)">click &rarr; meeting</span></div>
-        <div style="width:100%;background:#e7edf6;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">5,041</div><div style="font-size:10px;color:var(--ink3)">clicks · £2.27 each</div></div>
-        <div style="text-align:center;font-size:10px;color:var(--ink3);padding:3px 0">&darr; 8.8%</div>
-        <div style="width:70%;margin:0 auto;background:#dbe7c8;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">444</div><div style="font-size:10px;color:var(--ink3)">accounts · £26 each</div></div>
-        <div style="text-align:center;font-size:10px;color:var(--ink3);padding:3px 0">&darr; 50%</div>
-        <div style="width:44%;margin:0 auto;background:#b6cf86;border-radius:7px;padding:8px;text-align:center"><div style="font-size:14px;font-weight:700">221</div><div style="font-size:10px;color:#3d4d1a">meetings · £52 each</div></div>
+        <p class="share">W35 £11.4k · <strong>80 ads run in Aug, 1 live</strong></p>
+        <div style="text-align:center;margin:8px 0 14px"><span style="font-size:32px;font-weight:700;color:#27500A">4.4%</span><br><span style="font-size:11px;color:var(--ink3)">click &rarr; meeting, W35</span></div>
+        <div class="arow" style="border-top:none"><span class="l">W35 accounts</span><span class="v">444 · £26</span></div>
+        <div class="arow"><span class="l">W35 meetings</span><span class="v">221 · £52</span></div>
+        <div class="arow"><span class="l">Aug MTD spend</span><span class="v">£44.7k</span></div>
+        <div class="arow"><span class="l">Aug MTD CP FVM</span><span class="v">£47.52</span></div>
+        <p class="take">Best click&rarr;meeting rate of the three, and within £2 of the others on cost — but down to a single live ad.</p>
       </div>
 
     </div>
-    <div class="panel" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px">
-      <span style="font-size:13px;color:var(--ink2)"><strong>The archetype gap has closed.</strong> Last week Decision-makers ran £32 a meeting against Busy Mind-ers' £44; this week all three sit inside £3 of each other on £25–26 accounts. On these numbers archetype is no longer the lever — format and angle are.</span>
-      <span style="font-size:13px;font-weight:700"><span style="color:#27500A">Testing £50</span> &nbsp;vs&nbsp; <span style="color:#854F0B">account £73</span> / meeting</span>
-    </div>
+    <div class="flag"><div class="ic">▲</div><p><strong>Decision-makers didn't underperform — it stopped delivering.</strong> The 18 Aug launch put <strong>20 Decision-makers ads live and they spent about £15 between them</strong> (£4, £2, £2, £1, £0 …). The 4 Aug batch of 31 had already run and been paused; 24 Aug relaunched 7 that spent normally. Across the whole month the archetype ran 80 ads at £25.35 an account and £47.52 a meeting — statistically indistinguishable from Busy Mind-ers and Daily Doers. Worth checking that ad set's budget and setup for the 18 Aug batch, because it cost a fortnight of learning.</p></div>
   </section>
 
   <section>
     <h2>Early standouts — the graduation gate</h2>
-    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Live (ACTIVE) US testing ads only, scored on Freddie's gate: <strong>10+ account_created conversions AND CPA under the format's 14-day benchmark &rarr; scale</strong>. Cost per meeting is a note, never the ranking metric — it lags 7–30 days and under-credits fresh winners. Benchmarks used: Static £45.21 · Video £64.38 · Whitelisted £56.43 (W32 locked).</p>
+    <p style="font-size:12px;color:var(--ink3);margin:4px 0 16px">Live in testing, <strong>not already promoted to scaling</strong>, 10+ account_created conversions, and beating <strong>both</strong> the CPA and the cost-per-meeting benchmark. Benchmarks are the locked set from the 20 Aug gate run: Static £43.18 CPA / £62.17 CP FVM · Video £51.52 / £145.26 · Whitelisted £63.85 / £85.07 · Motion £64.40 / £181.58.</p>
 
-    <div class="flag"><div class="ic">▲</div><p><strong>Benchmark refresh is overdue — this is the decision that matters this week.</strong> The framework recalculates the benchmark every 14 days; these are three weeks old. Recomputing trailing-14-day CPA from the Desktop_CLS winners ad sets gives <strong>Static £25.80 · Video £34.78 · Whitelisted £35.23</strong> — roughly 40% tighter — and flips 9 of the 12 scale calls below to kill. That would take the gate's pass rate from 86% to 21%, well outside the ~83% the framework was designed around, so it should not be applied unilaterally. Flagging for Freddie to lock the refreshed numbers properly before next Monday.</p></div>
-
-    <p class="winlabel" style="margin-top:18px">12 graduate &middot; all live, all US testing</p>
+    <p class="winlabel" style="margin-top:4px">Four worth iterating on — all Siha statics</p>
     <div class="grid5" style="grid-template-columns:repeat(4,minmax(0,1fr))">
 
-      <div class="cc"><div class="img"><div class="ph">Video</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a845e77c34d8f2d5210036d/large-thumbnail/0e195187-0f40-42ad-9381-24c5256894d7.jpg" onerror="this.style.display='none'"><div class="fmt">Video</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C187_g36_v2</p><p class="wk">Busy Mind-ers · Be present · 🟢 live</p></div><div class="tags"><span class="tag t-up">-23% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">138</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£49</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£64</p></div></div></div></div>
-      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a8c47f21c821539dba3d871/large-thumbnail/68b30a0b-3141-4a50-ba46-ba71c02763c8.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C202_g6_v4</p><p class="wk">Decision-makers · Prep · 🟢 live</p></div><div class="tags"><span class="tag t-up">-14% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">92</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£39</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
-      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a845e77c34d8f2d521005e6/large-thumbnail/4e79964c-ddac-4752-89ae-906272325b9a.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C168_g2_v2</p><p class="wk">Busy Mind-ers · Cross-platform · 🟢 live</p></div><div class="tags"><span class="tag t-up">-44% vs benchmark</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">19</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£25</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
-      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a8c39d61c821539db86d764/large-thumbnail/f46b6c5b-c536-4965-b89f-f834c9a06bf8.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C205_g5_v2</p><p class="wk">Daily Doers · Follow-ups · 🟢 live</p></div><div class="tags"><span class="tag t-up">-5% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">16</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£43</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
-      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a8c47e51c821539dba35cd7/large-thumbnail/71822584-5c41-4407-a77a-7091b51a139b.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C199_g3_v4</p><p class="wk">Busy Mind-ers · Integrations · 🟢 live</p></div><div class="tags"><span class="tag t-up">-41% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">16</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£27</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a845e77c34d8f2d52100516/large-thumbnail/4b9adf45-f21c-48cc-afc5-3e6f8aefed74.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C168_g2_v1</p><p class="wk">Busy Mind-ers · Cross-platform · 🟢 live</p></div><div class="tags"><span class="tag t-up">-58% vs benchmark</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">16</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£19</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
-      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a8c39d61c821539db86d74e/large-thumbnail/9b8579b6-1363-4f8f-834b-bc4067eff90f.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C199_g3_v3</p><p class="wk">Daily Doers · Integrations · 🟢 live</p></div><div class="tags"><span class="tag t-up">-21% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">15</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£36</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
-      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a8c39d61c821539db86d705/large-thumbnail/f1677088-9a59-4329-a4ca-768f3e7525e9.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C205_g5_v3</p><p class="wk">Daily Doers · Follow-ups · 🟢 live</p></div><div class="tags"><span class="tag t-up">-43% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">15</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£26</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
-      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a845e77c34d8f2d52100332/large-thumbnail/3d0be811-8970-44dc-9b06-971e5e05354b.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C184_g8_v3</p><p class="wk">Busy Mind-ers · Prep · 🟢 live</p></div><div class="tags"><span class="tag t-up">-33% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">13</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£30</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
+        <div class="body"><div><p class="nm">C168_g2_v1</p><p class="wk">Busy Mind-ers · Cross-platform · 🟢 live in testing</p></div><div class="tags"><span class="tag t-up">CPA -56%</span><span class="tag t-up">CP FVM -18%</span></div>
+        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">16</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£19</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£51</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a845069c34d8f2d52f88384/large-thumbnail/7f8fc84d-a3d5-41fd-9cca-b3c61a594f0c.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C161_g8_v6</p><p class="wk">Daily Doers · Prep · 🟢 live</p></div><div class="tags"><span class="tag t-up">-44% vs benchmark</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">11</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£25</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
-      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a8c39d61c821539db86d6f6/large-thumbnail/168d9acd-e1a7-484e-90db-97d950d455ff.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C205_g5_v1</p><p class="wk">Daily Doers · Follow-ups · 🟢 live</p></div><div class="tags"><span class="tag t-up">-36% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">10</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£29</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
+        <div class="body"><div><p class="nm">C161_g8_v6</p><p class="wk">Daily Doers · Prep · 🟢 live in testing</p></div><div class="tags"><span class="tag t-up">CPA -42%</span><span class="tag t-up">CP FVM -36%</span></div>
+        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">11</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£25</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£40</p></div></div></div></div>
       <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a845069c34d8f2d52f883af/large-thumbnail/77c897a3-00fa-4257-8ba2-dffabfcf24c9.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
-        <div class="body"><div><p class="nm">C167_g1_v3</p><p class="wk">Daily Doers · Cross-platform · 🟢 live</p></div><div class="tags"><span class="tag t-up">-42% vs benchmark</span><span class="tag t-flat">flips on refresh</span></div>
-        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">10</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£26</p></div><div class="s"><p class="sl">Benchmark</p><p class="sv">£45</p></div></div></div></div>
+        <div class="body"><div><p class="nm">C167_g1_v3</p><p class="wk">Daily Doers · Cross-platform · 🟢 live in testing</p></div><div class="tags"><span class="tag t-up">CPA -39%</span><span class="tag t-up">CP FVM -62%</span></div>
+        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">10</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£26</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£24</p></div></div></div></div>
+      <div class="cc"><div class="img"><div class="ph">Static</div><img src="https://motionaccountassets.blob.core.windows.net/6968b4b109bcc1ff2e8ccd1e/adunit/6a8c47e51c821539dba35cd7/large-thumbnail/71822584-5c41-4407-a77a-7091b51a139b.jpg" onerror="this.style.display='none'"><div class="fmt">Static</div><div class="badge b-gr">SCALE</div></div>
+        <div class="body"><div><p class="nm">C199_g3_v4</p><p class="wk">Busy Mind-ers · Integrations · 🟢 live in testing</p></div><div class="tags"><span class="tag t-up">CPA -38%</span><span class="tag t-up">CP FVM -1%</span></div>
+        <div class="stats"><div class="s"><p class="sl">Accounts</p><p class="sv">16</p></div><div class="s"><p class="sl">CPA</p><p class="sv" style="color:#27500A">£27</p></div><div class="s"><p class="sl">CP FVM</p><p class="sv" style="color:#27500A">£61</p></div></div></div></div>
     </div>
+    <p style="font-size:12px;color:var(--ink2);margin-top:12px">Eight more live ads clear the CPA benchmark but fail cost per meeting — C202_g6_v4 at £142 against £62.17, C187_g36_v2 at £170 against £145.26 — so they are CPA-only passes rather than standouts. Two angles carry three of the four here: <strong>cross-platform</strong> and <strong>integrations</strong>, both of which have now led the cheap end of testing three weeks running.</p>
 
-    <div class="arch3" style="margin-top:22px">
+    <div class="flag"><div class="ic">▲</div><p><strong>The bigger list is the one that isn't running.</strong> 34 paused testing videos each cleared 10+ conversions and beat <em>both</em> benchmarks — £28.6k, 1,327 accounts at £21.52, 720 meetings at £39.67. Ten were correctly promoted to scaling. <strong>24 are not running anywhere</strong>, including C188_g34_v1 (122 accounts at £21.66) and C189_g32_v4 (57 at £18.11). Meanwhile the only two videos still live in testing are the only two that fail the cost-per-meeting benchmark. If those 24 are staged for today's launch this is the framework working; if not, it is roughly £30k of proven creative switched off.</p></div>
+
+    <div class="arch3" style="margin-top:18px">
       <div class="ac" style="border-top-color:#993C1D">
         <h3>Kill</h3>
         <p class="share">missed the benchmark at 10+ conversions, or tripped the 3× rule</p>
-        <div class="arow"><span class="l">C188_g34_v2 · Video</span><span class="v" style="color:#993C1D">£94 CPA · 59 conv</span></div><div class="arow"><span class="l">C161_g8_v1 · Static</span><span class="v" style="color:#993C1D">£73 CPA · 2 conv · 3× rule</span></div>
+        <div class="arow"><span class="l">C188_g34_v2 · Video</span><span class="v" style="color:#993C1D">£94 CPA vs £51.52 · 59 conv</span></div>
+        <div class="arow"><span class="l">C161_g8_v1 · Static</span><span class="v" style="color:#993C1D">£146 spend, 2 conv · 3× rule</span></div>
       </div>
       <div class="ac" style="border-top-color:#c9a875">
         <h3>Hold — too early</h3>
-        <p class="share">under 10 conversions · 10 ads, top 6 shown</p>
-        <div class="arow"><span class="l">C194_g2_v1</span><span class="v">£20 CPA · 8 conv</span></div><div class="arow"><span class="l">C194_g2_v3</span><span class="v">£19 CPA · 8 conv</span></div><div class="arow"><span class="l">C161_g8_v2</span><span class="v">£45 CPA · 7 conv</span></div><div class="arow"><span class="l">C185_g7_v5</span><span class="v">£29 CPA · 7 conv</span></div><div class="arow"><span class="l">C184_g8_v6</span><span class="v">£28 CPA · 7 conv</span></div><div class="arow"><span class="l">C177_g5_v1</span><span class="v">£30 CPA · 6 conv</span></div>
+        <p class="share">under 10 conversions · 10 ads</p>
+        <div class="arow"><span class="l">C194_g2_v1</span><span class="v">£19.67 CPA · 8 conv</span></div>
+        <div class="arow"><span class="l">C194_g2_v3</span><span class="v">£19.13 CPA · 8 conv</span></div>
+        <div class="arow"><span class="l">C185_g7_v5</span><span class="v">£29.47 CPA · 7 conv</span></div>
+        <div class="arow"><span class="l">C184_g8_v6</span><span class="v">£28.26 CPA · 7 conv</span></div>
       </div>
       <div class="ac" style="border-top-color:#639922">
-        <h3>What the pool looks like</h3>
-        <p class="share">24 live of 85 testing ads</p>
-        <div class="arow" style="border-top:none"><span class="l">Siha statics live</span><span class="v">22</span></div>
-        <div class="arow"><span class="l">Newform videos live</span><span class="v" style="color:#993C1D">2</span></div>
-        <div class="arow"><span class="l">Cheapest CPA live</span><span class="v" style="color:#27500A">C168_g2_v1 £19</span></div>
-        <div class="arow"><span class="l">Best angle by volume</span><span class="v">Follow-ups · 9 ads</span></div>
+        <h3>Testing pool — month to date</h3>
+        <p class="share">1–30 Aug across the three Archetype Testing ad sets</p>
+        <div class="arow" style="border-top:none"><span class="l">Ads run in August</span><span class="v">336</span></div>
+        <div class="arow"><span class="l">Live now</span><span class="v" style="color:#993C1D">24</span></div>
+        <div class="arow"><span class="l">Live split</span><span class="v">22 static · 2 video</span></div>
+        <div class="arow"><span class="l">Aug testing CP FVM</span><span class="v" style="color:#27500A">£47.31</span></div>
       </div>
     </div>
 
-    <p style="font-size:11px;color:var(--ink3);margin-top:12px"><strong>On the paused cohort:</strong> 61 of 85 testing ads are off, and several show eye-catching CPAs of £6–12 in-week. That is an artefact, not a finding — they stopped spending mid-window while conversions from earlier clicks kept landing, so the denominator collapsed. They are correctly excluded. Worth confirming with Catalyst that the 18 Aug video cohort was switched off deliberately rather than swept up in the new batch launch, because it takes the entire Newform video line out of live testing at once.</p>
+    <p style="font-size:11px;color:var(--ink3);margin-top:12px"><strong>On the paused cohort:</strong> the very small paused ads show CPAs of £6–12 because they stopped spending mid-window while conversions from earlier clicks kept landing — an artefact, and correctly excluded. That does not apply to the £1–3.6k spenders above, whose numbers are real. Gate figures are in-week; Freddie's daily run scores lifetime conversions inside a 30-day pull, so an ad sitting in "hold" here may already have cleared 10 lifetime conversions there.</p>
   </section>
 
   <section>
@@ -434,7 +474,7 @@
   <footer>
     <p>Pulled from Motion + Google Ads · Granola ai workspace · W35 (24 Aug – 30 Aug 2026) · goal: cost per first valid meeting (Meta custom conversion 1207928644549116) · values in GBP</p>
     <p><strong>Data sources this run.</strong> The Meta Ads and Google Ads connectors were not available in this session, so every figure comes from Motion. Account totals are Motion's account-level aggregate for the week, which reconciled to within 0.3% of last week's Meta figures (£343.2k vs £342.0k reported), so they are treated as complete. Three consequences: <strong>no "Preview ↗" links</strong> this week (they are generated by the Meta ad-preview endpoint), market splits are grouped on the campaign's target market rather than a Meta country breakdown, and the YouTube section below is built from the Google Ads Campaign report export Naomi supplied, which is campaign-level only. Live/off status comes from Motion's ad-level status field, which mirrors Meta's; a creative counts as live if any of its placements is ACTIVE.</p>
-    <p>Every figure is a weekly pulse (Mon–Sun), never month-to-date. Motion's top 60 includes three awareness creatives (£11.0k) which are excluded from the creative sections, leaving 57 conversion creatives covering £377.1k. Account CP FVM and CP account are Meta pixel cost-per-conversion; account_created is Motion’s combined count (16,848); the underlying work (27688460024073511) + personal (1551457786769977) conversions sum to 16,823, a 0.1% gap. Creatives are grouped on the full <code>C##_g#_v#</code> token. Gate figures are ad-level, live (ACTIVE) US testing ads inside the <code>Archetype Testing</code> ad sets; scale and kill decisions sit with Freddie's daily run and are reproduced here, not made here. Scaling / holding / declining are Motion <code>spendState</code>, not the promotion gate. Hook metrics (CTR, thumbstop) measure attention only and are never a graduation signal. Refreshes every Monday.</p>
+    <p>Efficiency figures are a weekly pulse (Mon–Sun). <strong>Ad-volume counts are month to date (1–30 Aug)</strong>, because a single week understates the pool — most of a cohort is paused by the time the next one launches. Each is labelled where it appears. Motion's top 60 includes three awareness creatives (£11.0k) which are excluded from the creative sections, leaving 57 conversion creatives covering £377.1k. Account CP FVM and CP account are Meta pixel cost-per-conversion; account_created is Motion’s combined count (16,848); the underlying work (27688460024073511) + personal (1551457786769977) conversions sum to 16,823, a 0.1% gap. Creatives are grouped on the full <code>C##_g#_v#</code> token. Gate figures are ad-level, live (ACTIVE) US testing ads inside the <code>Archetype Testing</code> ad sets, excluding anything already promoted to scaling. Benchmarks are the locked set from the 20 Aug gate run (US_Testing_Scaling v7.14, window 21 Jul – 19 Aug, live CLS Scaling trailing-14 median with a 20-conversion floor), logged on the Testing to Scaling framework <em>Data</em> page in Notion. Scale and kill decisions sit with Freddie's daily run and are reproduced here, not made here — note the log shows no run between 21 Aug and this report. Scaling / holding / declining are Motion <code>spendState</code>, not the promotion gate. Hook metrics (CTR, thumbstop) measure attention only and are never a graduation signal. Refreshes every Monday.</p>
     <p style="margin-top:6px"><a href="https://www.facebook.com/ads/library/?active_status=active&amp;ad_type=all&amp;country=US&amp;view_all_page_id=743624392167270" target="_blank" rel="noopener" style="color:var(--ink2)">Browse all live Granola ads in the Meta Ad Library ↗</a></p>
   </footer>
 
