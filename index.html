@@ -262,16 +262,55 @@
     </div>
 
     <div class="panel">
-      <h3 style="font-size:14px;font-weight:700;margin-bottom:4px">The WorkEmail campaign has the lowest work-email share in the account</h3>
-      <p style="font-size:12px;color:var(--ink2);margin-bottom:10px">This is the dip Freddie described, and the numbers bear it out. WorkEmail returns <strong>28% work-email accounts against an account average of 44%</strong> — the lowest of any campaign — while Testing runs at 56% and both US scaling campaigns at 51%. It buys the cheapest accounts in the account at £18.64 and the dearest meetings at £241, because the accounts it is buying are overwhelmingly personal-email signups.</p>
-      <div style="display:flex;height:26px;border-radius:8px;overflow:hidden;font-size:11px;font-weight:600;margin-bottom:4px">
-        <div style="width:28%;background:#292524;color:#fff;display:flex;align-items:center;justify-content:center">Work 28%</div>
-        <div style="width:72%;background:#e0d5c2;color:#57534e;display:flex;align-items:center;justify-content:center">Personal 72% — WorkEmail campaign</div>
+      <h3 style="font-size:14px;font-weight:700;margin-bottom:4px">Work vs personal email — the WorkEmail campaign has the lowest work share in the account</h3>
+      <p style="font-size:12px;color:var(--ink2);margin-bottom:14px">Every account created this week split by the email address used to sign up. The metric is <strong><code>account_created</code></strong> — work (<code>27688460024073511</code>) plus personal (<code>1551457786769977</code>) — <strong>not <code>account_created_on_desktop</code></strong>, which is a separate, narrower event. Bars are sized by share of that campaign's accounts and labelled with the actual counts.</p>
+
+      <div style="display:grid;grid-template-columns:1.5fr 2.4fr .7fr 1.1fr;gap:0;align-items:center">
+        <div style="padding:8px 0;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Campaign</div>
+        <div style="padding:8px 0;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase"><span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:#292524;margin-right:5px"></span>Work &nbsp;·&nbsp; <span style="display:inline-block;width:9px;height:9px;border-radius:2px;background:#e0d5c2;margin-right:5px"></span>Personal</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Work %</div>
+        <div style="padding:8px 0;text-align:right;color:var(--ink3);font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase">Cost / meeting</div>
+
+        <div style="padding:9px 0;border-top:1px solid var(--line);font-size:13px;font-weight:600">WorkEmail scaling · US<br><span style="font-weight:400;color:var(--ink3);font-size:11px">4,738 accounts this week</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line)">
+          <div style="display:flex;height:24px;border-radius:6px;overflow:hidden;font-size:11px;font-weight:600">
+            <div style="width:28%;background:#993C1D;color:#fff;display:flex;align-items:center;justify-content:center">1,305</div>
+            <div style="width:72%;background:#f0dcd4;color:#7a3418;display:flex;align-items:center;justify-content:center">3,433</div>
+          </div>
+        </div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;font-size:15px;font-weight:700;color:#993C1D">28%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;font-size:12px;color:var(--ink2)"><span style="color:#993C1D;font-weight:700">£241</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);font-size:13px;font-weight:600">Desktop scaling · US<br><span style="font-weight:400;color:var(--ink3);font-size:11px">3,189 accounts this week</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line)">
+          <div style="display:flex;height:24px;border-radius:6px;overflow:hidden;font-size:11px;font-weight:600">
+            <div style="width:51%;background:#292524;color:#fff;display:flex;align-items:center;justify-content:center">1,616</div>
+            <div style="width:49%;background:#e0d5c2;color:#57534e;display:flex;align-items:center;justify-content:center">1,573</div>
+          </div>
+        </div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;font-size:15px;font-weight:700;color:#292524">51%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;font-size:12px;color:var(--ink2)">£62</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);font-size:13px;font-weight:600">US Testing<br><span style="font-weight:400;color:var(--ink3);font-size:11px">2,193 accounts this week</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line)">
+          <div style="display:flex;height:24px;border-radius:6px;overflow:hidden;font-size:11px;font-weight:600">
+            <div style="width:56%;background:#639922;color:#fff;display:flex;align-items:center;justify-content:center">1,230</div>
+            <div style="width:44%;background:#dbe7c8;color:#3d4d1a;display:flex;align-items:center;justify-content:center">963</div>
+          </div>
+        </div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;font-size:15px;font-weight:700;color:#639922">56%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;font-size:12px;color:var(--ink2)"><span style="color:#27500A;font-weight:700">£50</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);font-size:13px;font-weight:600">Whole account<br><span style="font-weight:400;color:var(--ink3);font-size:11px">16,820 accounts this week</span></div>
+        <div style="padding:9px 0;border-top:1px solid var(--line)">
+          <div style="display:flex;height:24px;border-radius:6px;overflow:hidden;font-size:11px;font-weight:600">
+            <div style="width:44%;background:#57534e;color:#fff;display:flex;align-items:center;justify-content:center">7,405</div>
+            <div style="width:56%;background:#e7e5e4;color:#57534e;display:flex;align-items:center;justify-content:center">9,415</div>
+          </div>
+        </div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;font-size:15px;font-weight:700;color:#57534e">44%</div>
+        <div style="padding:9px 0;border-top:1px solid var(--line);text-align:right;font-size:12px;color:var(--ink2)">£73</div>
       </div>
-      <div style="display:flex;height:26px;border-radius:8px;overflow:hidden;font-size:11px;font-weight:600">
-        <div style="width:56%;background:#639922;color:#fff;display:flex;align-items:center;justify-content:center">Work 56%</div>
-        <div style="width:44%;background:#dbe7c8;color:#3d4d1a;display:flex;align-items:center;justify-content:center">Personal 44% — US Testing</div>
-      </div>
+
+      <p style="font-size:12px;color:var(--ink2);margin-top:14px"><strong>Read it as: the campaign built to win work-email signups wins the fewest.</strong> WorkEmail returns 28% work against a 44% account average — the lowest of any campaign — while US Testing runs 56%. It buys the cheapest accounts anywhere at £18.64 and the dearest meetings at £241, because nearly three quarters of what it buys are personal-email signups that do not go on to run a meeting.</p>
+      <p style="font-size:11px;color:var(--ink3);margin-top:8px">Work share is worth watching as a leading indicator: across the 30 highest-spending creatives it correlates with account&rarr;meeting at <strong>0.84</strong>, and unlike cost per meeting it is readable immediately rather than after a 7–30 day lag.</p>
     </div>
 
     <div class="panel">
